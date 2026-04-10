@@ -6,6 +6,13 @@ My personal solutions for paradigm ctf 2021. I am a web3 security beginner. Thes
 
 This project is built and tested on **Windows 11 + WSL2 (Ubuntu)**.
 
+### Official Repository Structure
+
+The official [Paradigm CTF 2021](https://github.com/paradigmxyz/paradigm-ctf-2021) repository uses a `public/` / `private/` split:
+
+- `public/`: Challenge files visible to participants (contracts, deployment scripts)
+- `private/`: Internal files (bytecode, solve scripts, tooling)
+
 ### Prerequisites
 
 - Windows 11 with WSL2 enabled
@@ -46,7 +53,8 @@ Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.a
 
 | Challenge | Status |
 |-----------|--------|
-| Hello | ✅ Solved |
+| hello | ✅ Solved |
+| babycrypto | ✅ Solved |
 | ... | 🚧 In Progress |
 
 ### Lessons Learned
