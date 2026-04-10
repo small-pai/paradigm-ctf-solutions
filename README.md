@@ -42,6 +42,13 @@ export ETH_RPC_URL=https://mainnet.infura.io/v3/YOUR_API_KEY
 ```
 Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.alchemy.com/).
 
+## Solutions
+
+| Challenge | Status |
+|-----------|--------|
+| Hello | ✅ Solved |
+| ... | 🚧 In Progress |
+
 ### Lessons Learned
 (To be filled as I progress)
 
