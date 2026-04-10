@@ -99,3 +99,23 @@ cat challenge.hex | xxd -r -p | strings | grep -i "PCTF"
 ```
 输出：  
 PCTF{v32y_53cu23_3nc2yp710n_4190217hm}
+
+## FLAG
+PCTF{v32y_53cu23_3nc2yp710n_4190217hm}
+
+## Lessons Learned
+
+
+| 误区 | 正确做法 |
+|------|----------|
+| 以为必须深入逆向整个字节码 | 先试试提取可读字符串 |
+| 以为需要理解复杂算法 | flag 可能直接明文存储 |
+| 以为必须写攻击脚本 | 简单的命令行工具往往最有效 |
+
+
+| 问题 | 解决方案 |
+|------|----------|
+| 没有 `Challenge.sol` 源码 | 字节码在 `compiled.bin` 中 |
+| 不知道如何提取字节码 | 用 `jq` 解析 JSON |
+| 字节码太长无法直接阅读 | 用 `pyevmasm` 反汇编 |
+| 不知道如何找 flag | 用 `xxd -r -p` 转二进制后用 `strings` 提取 |
