@@ -6,12 +6,7 @@ My personal solutions for paradigm ctf 2021. I am a web3 security beginner. Thes
 
 This project is built and tested on **Windows 11 + WSL2 (Ubuntu)**.
 
-### Official Repository Structure
-
-The official [Paradigm CTF 2021](https://github.com/paradigmxyz/paradigm-ctf-2021) repository uses a `public/` / `private/` split:
-
-- `public/`: Challenge files visible to participants (contracts, deployment scripts)
-- `private/`: Internal files (bytecode, solve scripts, tooling)
+> Note: The official repository uses `public/` for participant-visible files and `private/` for internal files.
 
 ### Prerequisites
 
