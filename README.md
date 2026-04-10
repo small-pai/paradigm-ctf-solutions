@@ -53,7 +53,32 @@ Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.a
 | ... | 🚧 In Progress |
 
 ### Lessons Learned
-(To be filled as I progress)
+### Environment Setup (Windows 11 + WSL2)
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| `wsl --install` fails with `HCS_E_HYPERV_NOT_INSTALLED` | BIOS virtualization is disabled | Reboot and enable Intel VT-x / AMD SVM in BIOS |
+| `wsl --install -d Ubuntu` download fails | Unstable GitHub connection | Manually install Ubuntu from Microsoft Store |
+| Docker fails to pull `gcr.io` images | Authentication required | `gcloud auth configure-docker` |
+| `pip install` times out | Slow PyPI mirror | `pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple` |
+| `externally-managed-environment` error | Ubuntu 24.04 protection mechanism | Use virtual environment `python3 -m venv venv` |
+| `pysha3` compilation fails | Python 3.12 incompatibility | Use `hashlib.sha3_256()` instead |
+| Port already allocated | Previous container still running | `docker stop $(docker ps -q)` |
+
+### Toolchain
+
+- **`socat`**: Expose a Python script as a network service
+  ```bash
+  socat TCP-LISTEN:31337,reuseaddr,fork EXEC:"python chal.py",pty,stderr
+- **`cast`**: EVM interaction tool — disassemble bytecode, send transactions, query on-chain state
+- **Virtual environment**: Remember to run `source venv/bin/activate` every time you open a new terminal
+
+### Problem-Solving Mindset
+
+1. **Environment setup takes 80% of the time** — this is normal, not a reflection of your ability
+2. **Looking things up is not cheating** — CTF allows searching and learning
+3. **Manual operations are often more reliable than automation** — complex scripts are prone to timing issues
+
 
 ### Acknowledgments
 [Paradigm CTF 2021](https://github.com/paradigmxyz/paradigm-ctf-2021) - The official challenge repository  
