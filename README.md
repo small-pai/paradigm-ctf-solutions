@@ -50,6 +50,7 @@ Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.a
 |-----------|--------|
 | hello | ✅ Solved |
 | babycrypto | ✅ Solved |
+| babyrev | ✅ Solved |
 | ... | 🚧 In Progress |
 
 ### Lessons Learned
