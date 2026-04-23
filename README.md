@@ -54,6 +54,7 @@ Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.a
 | babysandbox | ✅ Solved |
 | lockbox | 🚧 Partially Solved |
 | bank | 📖 Analyzed |
+| market | 📖 Analyzed |
 | ... | 🚧 In Progress |
 
 ### Lessons Learned
