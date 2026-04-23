@@ -1,9 +1,9 @@
 # paradigm-ctf-solutions
 
-My personal solutions for paradigm ctf 2021. I am a web3 security beginner. These solutions represent my own thought process, including where I got stuck, how I unblock myself, and what I learned. I aim to solve each challenge without relying on existing writeups first. If I do refer to others’ solutions, I will rewrite them in my own words and credit the source.
+My personal solutions for Paradigm CTF series (2021, 2022, 2023). I am a web3 security beginner. These solutions represent my own thought process, including where I got stuck, how I unblock myself, and what I learned. I aim to solve each challenge without relying on existing writeups first. If I do refer to others’ solutions, I will rewrite them in my own words and credit the source.
 
 ## Notice
-Temporarily suspend the reproduction of Paradigm CTF 2021 challenges due to environment compatibility issues.
+Temporarily suspend Paradigm CTF 2021 challenges due to environment compatibility issues.
 Will switch to newer sessions (2022/2023) for continued smart contract security learning.
 
 ## Environment Setup
@@ -58,12 +58,11 @@ Get a free endpoint from [Infura](https://infura.io/) or [Alchemy](https://www.a
 | lockbox | 🚧 Partially Solved |
 | bank | 📖 Analyzed |
 | market | 📖 Analyzed |
-| ... | 🚧 In Progress |
 
 ## 2022 Challenges (In Progress)
 | Challenge | Status |
 |-----------|--------|
-| Coming soon | 🚧 Planned |
+| Will be updated soon | 🚧 Planned |
 
 ### Lessons Learned
 ### Environment Setup (Windows 11 + WSL2)
